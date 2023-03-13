@@ -12,3 +12,9 @@
     justify-content: $justify;   
     align-items: $direction; 
 }
+
+@mixin btn($padding-vert:16px, $padding-hori:16px, $border:30px){
+    padding: $padding-vert $padding-hori;
+    border-radius: $border;
+    border: transparent;
+}

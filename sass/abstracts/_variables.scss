@@ -7,12 +7,13 @@ $colour-secondary:hsla(207, 100%, 20%, 1);
 $colour-tertiary: hsla(207, 92%, 76%, 1);
 $colour-fourth: hsla(165, 100%, 26%, 1);
 $colour-fifth: hsla(165, 56%, 74%, 1);
-$colour-background:hsla(0, 0%, 97%, 1);
-$colour-gradient:hsla(317, 100%, 74%, 1);
+
 $colour-white: hsl(0,0%,100%);
 $colour-black: hsl(0,0%,0%);
-$colour-grey-1: hsla(0, 0%, 92%, 1);
-$colour-grey-2: hsla(0, 0%, 82%, 1);
+$colour-bg-1: hsla(0, 0%, 92%, 1);
+$colour-bg-2: hsla(0, 0%, 82%, 1);
+
+$gradiant-1:  linear-gradient(200.64deg, $colour-primary -5.2%, #FF79DA 110.74%);
 
 //Container's maximum width
 $max-width: 1440px;

@@ -4,14 +4,14 @@
     &__nav-localisation {
         @include flex(row,center,center);
         width: 100%;
-        background-color: $colour-grey-1;
+        background-color: $colour-bg-1;
         padding: 16px 0;
         column-gap: 3%;
     }
     &__nav-description {
-        @include grid-repeat(3,0.5fr,1,1fr,center,center);
+        @include flex(column,center,center);
         padding: 24px;
-        background-color: $colour-grey-2;
+        background-color: $colour-bg-2;
         text-align: center;
     }
 }
