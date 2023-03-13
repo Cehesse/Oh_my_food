@@ -55,7 +55,7 @@ table {
 .page {
   box-sizing: border-box;
   max-width: 1440px;
-  padding: 5%;
+  padding: 0%;
 }
 
 *,
@@ -100,4 +100,57 @@ p {
 
 ul {
   list-style-type: none;
+}
+
+.header-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 0 8px 0;
+}
+.header-section img {
+  height: 44px;
+  width: 162px;
+}
+
+.nav-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.nav-section__nav-localisation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: hsl(0, 0%, 92%);
+  padding: 16px 0;
+  -moz-column-gap: 3%;
+       column-gap: 3%;
+}
+.nav-section__nav-description {
+  display: grid;
+  grid-template-rows: repeat(3, 0.5fr);
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background-color: hsl(0, 0%, 82%);
+  text-align: center;
+}
+
+.nav-description__title {
+  padding: 0 24px;
+}
+.nav-description__subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 16px 0;
+}
+.card-restaurant__img {
+  height: 20px;
 }/*# sourceMappingURL=main.css.map */

@@ -4,3 +4,11 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin grid-repeat($nb-rows:1, $nb-fr-rows:1fr, $nb-colums:1fr, $nb-fr-colums:1, $direction:center, $justify:center){
+    display: grid;
+    grid-template-rows: repeat($nb-rows,$nb-fr-rows);
+    grid-template-columns: repeat($nb-colums,$nb-fr-colums);
+    justify-content: $justify;   
+    align-items: $direction; 
+}
