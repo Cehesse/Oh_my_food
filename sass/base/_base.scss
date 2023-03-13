@@ -1,0 +1,28 @@
+.page{
+    box-sizing: border-box;
+    max-width: $max-width;
+    padding: $padding-page-border;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    @include flex();
+    font-family: $font;
+}
+
+a{
+    text-decoration: none;
+    color: $colour-black;
+}
+
+.push-to-right{
+    margin-right: auto;
+}
+

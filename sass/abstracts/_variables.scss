@@ -1,0 +1,28 @@
+//Variables
+
+//Color
+
+$colour-primary: #0065FC;
+$colour-secondary: #DEEBFF;
+$colour-tertiary: #F2F2F2;
+$colour-white: #fff;
+$colour-black: black;
+
+//Container's maximum width
+$max-width: 1400px;
+
+//Breakpoints map
+$breakpoints: (
+  'mobile': 767.98px,
+  'tablette': 991.98px,
+);
+
+// Font
+$font: 'Raleway', sans-serif;
+$font-weight: 700;
+$font-size-large: 22px;
+$font-size-medium: 18px;
+$font-size-small: 16px;
+
+//padding
+$padding-page-border: 5%
