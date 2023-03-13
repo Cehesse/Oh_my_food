@@ -2,27 +2,31 @@
 
 //Color
 
-$colour-primary: #0065FC;
-$colour-secondary: #DEEBFF;
-$colour-tertiary: #F2F2F2;
-$colour-white: #fff;
+$colour-primary: hsla(267, 66%, 60%, 1);
+$colour-secondary:hsla(207, 100%, 20%, 1);
+$colour-tertiary: hsla(207, 92%, 76%, 1);
+$colour-fourth: hsla(165, 100%, 26%, 1);
+$colour-fifth: hsla(165, 56%, 74%, 1);
+$colour-background:hsla(0, 0%, 97%, 1);
+$colour-gradient:hsla(317, 100%, 74%, 1)
+$colour-white: white;
 $colour-black: black;
 
 //Container's maximum width
-$max-width: 1400px;
+$max-width: 1440px;
 
 //Breakpoints map
 $breakpoints: (
   'mobile': 767.98px,
-  'tablette': 991.98px,
+  'tablette': 1023.98px,
 );
 
 // Font
-$font: 'Raleway', sans-serif;
-$font-weight: 700;
-$font-size-large: 22px;
+$font: 'Roboto', sans-serif, 'Shrikhand', curisve;
+$font-size-large: 24px;
 $font-size-medium: 18px;
 $font-size-small: 16px;
+$font-size-other: 15px;
 
 //padding
 $padding-page-border: 5%
