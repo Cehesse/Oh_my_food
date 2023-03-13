@@ -54,7 +54,7 @@ table {
 
 .page {
   box-sizing: border-box;
-  max-width: 1400px;
+  max-width: 1440px;
   padding: 5%;
 }
 
@@ -71,12 +71,12 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif, "Shrikhand", curisve;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: hsl(0, 0%, 0%);
 }
 
 .push-to-right {
@@ -84,18 +84,18 @@ a {
 }
 
 h1, h2 {
-  font-size: 22px;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 ul {

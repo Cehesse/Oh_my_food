@@ -8,9 +8,9 @@ $colour-tertiary: hsla(207, 92%, 76%, 1);
 $colour-fourth: hsla(165, 100%, 26%, 1);
 $colour-fifth: hsla(165, 56%, 74%, 1);
 $colour-background:hsla(0, 0%, 97%, 1);
-$colour-gradient:hsla(317, 100%, 74%, 1)
-$colour-white: white;
-$colour-black: black;
+$colour-gradient:hsla(317, 100%, 74%, 1);
+$colour-white: hsl(0,0%,100%);
+$colour-black: hsl(0,0%,0%);
 
 //Container's maximum width
 $max-width: 1440px;
@@ -27,6 +27,9 @@ $font-size-large: 24px;
 $font-size-medium: 18px;
 $font-size-small: 16px;
 $font-size-other: 15px;
+$font-weight-blod: 700;
+$font-weight-normal: 500;
+$font-weight-other: 300;
 
 //padding
 $padding-page-border: 5%
