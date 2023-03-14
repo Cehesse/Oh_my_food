@@ -151,8 +151,8 @@ p {
 .footer-section {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
   background-color: hsl(0, 0%, 0%);
   padding: 24px;
 }
@@ -199,7 +199,7 @@ p {
   border: transparent;
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   margin-bottom: 24px;
@@ -236,8 +236,8 @@ p {
 .card-restaurant {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
   border-radius: 15px;
   background-color: hsl(0, 0%, 100%);
   position: relative;

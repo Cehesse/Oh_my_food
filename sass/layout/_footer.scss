@@ -1,5 +1,5 @@
 .footer-section{
-    @include flex(column,start,start);
+    @include flex(column,flex-start,flex-start);
     background-color: $color-black;
     padding: 24px;
          &--text{
