@@ -193,7 +193,7 @@ ul {
   font-weight: 500;
 }
 .btn-base--purple {
-  background: linear-gradient(200.64deg, hsl(267, 66%, 60%) -5.2%, #FF79DA 110.74%);
+  background: linear-gradient(200.64deg, hsl(267, 66%, 60%) -5.2%, hsl(317, 100%, 74%));
   color: hsl(0, 0%, 100%);
 }
 
