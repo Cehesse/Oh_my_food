@@ -10,6 +10,7 @@
     }
         &__nav-description {
         @include flex(column,center,center);
+        width: 100%;
         padding: 24px;
         background-color: $color-bg-2;
         text-align: center;
@@ -21,8 +22,6 @@
         padding: 0 24px;
     }
         &__subtitle {
-        font-size: $font-size-medium;
-        font-weight: $font-weight-other;
         margin: 16px 0;
     }
 }

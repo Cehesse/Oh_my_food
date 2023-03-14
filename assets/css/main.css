@@ -94,8 +94,8 @@ h3 {
 }
 
 p {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 ul {
@@ -137,6 +137,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   padding: 24px;
   background-color: hsl(0, 0%, 97%);
   text-align: center;
@@ -146,8 +147,6 @@ ul {
   padding: 0 24px;
 }
 .nav-description__subtitle {
-  font-size: 18px;
-  font-weight: 300;
   margin: 16px 0;
 }
 
@@ -180,27 +179,70 @@ ul {
   right: 42px;
   padding: 4px 7px;
   border-radius: 50%;
+  font-size: 16px;
+  font-weight: 500;
 }
 .card-functioning__order--purple {
   background-color: hsl(267, 66%, 60%);
   color: hsl(0, 0%, 100%);
-  font-weight: 500;
 }
 .card-functioning__icone {
   margin-right: 24px;
+  font-size: 16px;
 }
 .card-functioning__icone--purple {
   color: hsl(267, 66%, 60%);
 }
 .card-functioning__text {
   width: 100%;
+  font-size: 16px;
+  font-weight: 500;
 }
 .card-functioning--purple {
   background-color: hsl(267, 100%, 96%);
 }
 
-.card-restaurant__img {
-  height: 20px;
+.card-restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 100%);
+  position: relative;
+}
+.card-restaurant img {
+  width: 100%;
+  height: 168px;
+  border-radius: 15px 15px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card-restaurant__text {
+  padding: 8px 16px;
+  width: 100%;
+}
+.card-restaurant__new {
+  position: absolute;
+  right: 5%;
+  top: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px;
+  color: hsl(165, 100%, 26%);
+  background-color: hsl(165, 56%, 74%);
+}
+.card-restaurant__title {
+  margin: 8px 0;
+}
+.card-restaurant__subtitle {
+  margin: 8px 0;
+}
+.card-restaurant__icone {
+  position: absolute;
+  right: 5%;
+  bottom: 32px;
+  font-size: 21px;
 }
 
 .functioning-section {
@@ -221,4 +263,28 @@ ul {
   grid-template-columns: repeat(1, 1fr);
   justify-content: center;
   align-items: center;
+  width: 100%;
+}
+
+.restaurant-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 16px;
+  width: 100%;
+  background-color: hsl(0, 0%, 97%);
+}
+.restaurant-section__restaurant-title {
+  width: 100%;
+  margin: 24px 0;
+}
+.restaurant-section__restaurant-cards {
+  display: grid;
+  grid-template-rows: repeat(4, 2fr);
+  grid-template-columns: repeat(1, 2fr);
+  justify-content: center;
+  align-items: center;
+  row-gap: 16px;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

@@ -8,5 +8,22 @@
     }
         &__functioning-step {
             @include grid-repeat(3,1fr,1,1fr,center,center);
+            width: 100%
+    }
+}
+
+.restaurant-section{
+    @include flex(column,center,center);
+    padding: 32px 16px;
+    width: 100%;
+    background-color: $color-bg-2;
+        &__restaurant-title {
+            width: 100%;
+            margin: 24px 0;
+    }
+        &__restaurant-cards {
+            @include grid-repeat(4,2fr,1,2fr,center,center);
+            row-gap: 16px;
+            width: 100%;
     }
 }
