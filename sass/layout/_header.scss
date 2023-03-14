@@ -1,0 +1,8 @@
+.header-section{
+    @include flex(row,center,center);
+    margin: 16px 0 8px 0;
+        img {
+        height: 44px;
+        width: 162px;
+        }
+}

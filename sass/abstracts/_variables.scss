@@ -2,27 +2,39 @@
 
 //Color
 
-$colour-primary: #0065FC;
-$colour-secondary: #DEEBFF;
-$colour-tertiary: #F2F2F2;
-$colour-white: #fff;
-$colour-black: black;
+$color-primary: hsla(267, 66%, 60%, 1);
+$color-secondary:hsla(207, 100%, 20%, 1);
+$color-secondary-light: hsla(207, 92%, 76%, 1);
+$color-tertiary: hsla(317, 100%, 74%, 1);
+$color-secondary-light: hsla(207, 92%, 76%, 1);
+
+$color-green: hsla(165, 100%, 26%, 1);
+$color-green-light: hsla(165, 56%, 74%, 1);
+
+$color-white: hsl(0,0%,100%);
+$color-black: hsl(0,0%,0%);
+
+$color-bg-1: hsla(0, 0%, 97%, 1);
+$color-bg-2: hsla(0, 0%, 92%, 1);
+
+$gradiant-1:  linear-gradient(200.64deg, $color-primary -5.2%, $color-tertiary);
 
 //Container's maximum width
-$max-width: 1400px;
+$max-width: 1440px;
 
 //Breakpoints map
 $breakpoints: (
   'mobile': 767.98px,
-  'tablette': 991.98px,
+  'tablette': 1023.98px,
 );
 
 // Font
-$font: 'Raleway', sans-serif;
-$font-weight: 700;
-$font-size-large: 22px;
+$font: 'Roboto', sans-serif;
+$font-size-large: 24px;
 $font-size-medium: 18px;
 $font-size-small: 16px;
+$font-weight-blod: 700;
+$font-weight-normal: 300;
 
 //padding
-$padding-page-border: 5%
+$padding-page-border: 0%

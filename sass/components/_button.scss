@@ -1,3 +1,9 @@
-.bnt{
-
+.btn-base{
+    @include btn(16px,24px,25px);
+    font-size: $font-size-small;
+    font-weight: 500;
+        &--purple{
+            background: $gradiant-1;
+            color: $color-white;
+        }
 }

@@ -1,2 +1,74 @@
-.card{
-}
+.card-functioning{
+    @include btn(24px,32px,20px);
+    @include flex(row,start,center);
+    width: 100%;
+    margin-bottom: 24px;
+    background: $color-bg-1;
+        &__order{
+            position: relative;
+            right: 42px;
+            padding: 4px 7px;
+            border-radius: 50%;
+            font-size: $font-size-small;
+            font-weight: 500;
+                &--purple{
+                    background-color: $color-primary;
+                    color: $color-white;
+                }
+            }
+        &__icone{
+            margin-right: 24px;
+            font-size: $font-size-small;
+                &--purple{
+                color: $color-primary;
+                }
+            }
+        &__text{
+            width: 100%;
+            font-size: $font-size-small;
+            font-weight: 500;
+            }
+        &--purple{
+            background-color: hsla(267, 100%, 96%, 1);        
+        } 
+    } 
+
+.card-restaurant{
+    @include flex(column,start,start);
+    border-radius: 15px;
+    background-color: $color-white;
+    position: relative;
+        img{
+            width: 100%;
+            height: 168px;
+            border-radius: 15px 15px 0 0;
+            object-fit: cover;
+        }
+        &__text{
+            padding: 8px 16px;
+            width: 100%;
+        }
+        &__new{
+            position: absolute;
+            right: 5%;
+            top: 16px;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 16px;
+            color: $color-green;
+            background-color: $color-green-light;
+            }
+        &__title{
+            margin: 8px 0;
+            }
+        &__subtitle{
+            margin: 8px 0;
+            font-size: 17px;
+            }
+        &__icone{
+            position: absolute;
+            right: 5%;
+            bottom: 32px;
+            font-size: 21px;
+        } 
+    } 
