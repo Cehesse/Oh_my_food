@@ -4,13 +4,14 @@
 
 $color-primary: hsla(267, 66%, 60%, 1);
 $color-secondary:hsla(207, 100%, 20%, 1);
-$color-tertiary: hsla(207, 92%, 76%, 1);
-$color-fourth: hsla(165, 100%, 26%, 1);
-$color-fifth: hsla(165, 56%, 74%, 1);
+$color-secondary-light: hsla(207, 92%, 76%, 1);
+$color-tertiary: hsla(165, 100%, 26%, 1);
+$color-tertiary-light: hsla(165, 56%, 74%, 1);
 
 $color-white: hsl(0,0%,100%);
 $color-black: hsl(0,0%,0%);
-$color-bg-1: hsla(0, 0%, 92%, 1);
+
+$color-bg-1: #F7F7F7;
 $color-bg-2: hsla(0, 0%, 97%, 1);
 
 $gradiant-1:  linear-gradient(200.64deg, $color-primary -5.2%, #FF79DA 110.74%);
@@ -25,14 +26,12 @@ $breakpoints: (
 );
 
 // Font
-$font: 'Roboto', sans-serif, 'Shrikhand', curisve;
+$font: 'Roboto', sans-serif;
 $font-size-large: 24px;
 $font-size-medium: 18px;
 $font-size-small: 16px;
-$font-size-other: 15px;
 $font-weight-blod: 700;
 $font-weight-normal: 300;
-$font-weight-other: 500;
 
 //padding
 $padding-page-border: 0%

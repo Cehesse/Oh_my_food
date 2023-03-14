@@ -1,0 +1,29 @@
+.footer-section{
+    @include flex(column,start,start);
+    background-color: $color-black;
+    padding: 24px;
+         &--text{
+            color: $color-white;
+            font-size: 16px;
+            font-weight: 400;
+            margin-right: 8px;
+        }
+        &--text-blod{
+            font-weight: 500;
+        }
+        i{
+            width: 16px;
+        }
+        &__footer-title{
+            font-size: $font-size-medium;
+            font-style: italic;
+            font-family: "Shrikhand", curisve;
+            font-weight: 400;
+        }
+        &__footer-links{
+            padding-top: 16px;
+        }
+        &__footer-link{
+            padding: 8px 0;
+        }
+}

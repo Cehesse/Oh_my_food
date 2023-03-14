@@ -59,10 +59,8 @@ table {
 }
 
 *,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -71,7 +69,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: "Roboto", sans-serif, "Shrikhand", curisve;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -127,7 +125,7 @@ ul {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: hsl(0, 0%, 92%);
+  background-color: hsl(0, 0%, 97%);
   padding: 16px 0;
   -moz-column-gap: 3%;
        column-gap: 3%;
@@ -139,7 +137,7 @@ ul {
   align-items: center;
   width: 100%;
   padding: 24px;
-  background-color: hsl(0, 0%, 97%);
+  background-color: #F7F7F7;
   text-align: center;
 }
 
@@ -148,6 +146,39 @@ ul {
 }
 .nav-description__subtitle {
   margin: 16px 0;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  background-color: hsl(0, 0%, 0%);
+  padding: 24px;
+}
+.footer-section--text {
+  color: hsl(0, 0%, 100%);
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 8px;
+}
+.footer-section--text-blod {
+  font-weight: 500;
+}
+.footer-section i {
+  width: 16px;
+}
+.footer-section__footer-title {
+  font-size: 18px;
+  font-style: italic;
+  font-family: "Shrikhand", curisve;
+  font-weight: 400;
+}
+.footer-section__footer-links {
+  padding-top: 16px;
+}
+.footer-section__footer-link {
+  padding: 8px 0;
 }
 
 .btn-base {
@@ -172,7 +203,7 @@ ul {
   align-items: center;
   width: 100%;
   margin: 24px 0;
-  background: hsl(0, 0%, 97%);
+  background: #F7F7F7;
 }
 .card-functioning__order {
   position: relative;
@@ -273,7 +304,7 @@ ul {
   align-items: center;
   padding: 32px 16px;
   width: 100%;
-  background-color: hsl(0, 0%, 97%);
+  background-color: #F7F7F7;
 }
 .restaurant-section__restaurant-title {
   width: 100%;
@@ -281,8 +312,8 @@ ul {
 }
 .restaurant-section__restaurant-cards {
   display: grid;
-  grid-template-rows: repeat(4, 2fr);
-  grid-template-columns: repeat(1, 2fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   justify-content: center;
   align-items: center;
   row-gap: 16px;
