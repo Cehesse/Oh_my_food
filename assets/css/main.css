@@ -138,7 +138,7 @@ ul {
   justify-content: center;
   align-items: center;
   padding: 24px;
-  background-color: hsl(0, 0%, 82%);
+  background-color: hsl(0, 0%, 97%);
   text-align: center;
 }
 
@@ -150,6 +150,7 @@ ul {
   font-weight: 300;
   margin: 16px 0;
 }
+
 .btn-base {
   padding: 16px 24px;
   border-radius: 25px;
@@ -157,11 +158,67 @@ ul {
 }
 .btn-base--purple {
   background: linear-gradient(200.64deg, hsl(267, 66%, 60%) -5.2%, #FF79DA 110.74%);
-  color: white;
+  color: hsl(0, 0%, 100%);
   font-size: 16px;
   font-weight: 500;
 }
 
+.card-functioning {
+  padding: 24px 32px;
+  border-radius: 20px;
+  border: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  margin: 24px 0;
+  background: hsl(0, 0%, 97%);
+}
+.card-functioning__order {
+  position: relative;
+  right: 42px;
+  padding: 4px 7px;
+  border-radius: 50%;
+}
+.card-functioning__order--purple {
+  background-color: hsl(267, 66%, 60%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+}
+.card-functioning__icone {
+  margin-right: 24px;
+}
+.card-functioning__icone--purple {
+  color: hsl(267, 66%, 60%);
+}
+.card-functioning__text {
+  width: 100%;
+}
+.card-functioning--purple {
+  background-color: hsl(267, 100%, 96%);
+}
+
 .card-restaurant__img {
   height: 20px;
+}
+
+.functioning-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  width: 100%;
+}
+.functioning-section__functioning-title {
+  width: 100%;
+  margin: 24px 0;
+}
+.functioning-section__functioning-step {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */

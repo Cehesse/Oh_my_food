@@ -2,18 +2,18 @@
 
 //Color
 
-$colour-primary: hsla(267, 66%, 60%, 1);
-$colour-secondary:hsla(207, 100%, 20%, 1);
-$colour-tertiary: hsla(207, 92%, 76%, 1);
-$colour-fourth: hsla(165, 100%, 26%, 1);
-$colour-fifth: hsla(165, 56%, 74%, 1);
+$color-primary: hsla(267, 66%, 60%, 1);
+$color-secondary:hsla(207, 100%, 20%, 1);
+$color-tertiary: hsla(207, 92%, 76%, 1);
+$color-fourth: hsla(165, 100%, 26%, 1);
+$color-fifth: hsla(165, 56%, 74%, 1);
 
-$colour-white: hsl(0,0%,100%);
-$colour-black: hsl(0,0%,0%);
-$colour-bg-1: hsla(0, 0%, 92%, 1);
-$colour-bg-2: hsla(0, 0%, 82%, 1);
+$color-white: hsl(0,0%,100%);
+$color-black: hsl(0,0%,0%);
+$color-bg-1: hsla(0, 0%, 92%, 1);
+$color-bg-2: hsla(0, 0%, 97%, 1);
 
-$gradiant-1:  linear-gradient(200.64deg, $colour-primary -5.2%, #FF79DA 110.74%);
+$gradiant-1:  linear-gradient(200.64deg, $color-primary -5.2%, #FF79DA 110.74%);
 
 //Container's maximum width
 $max-width: 1440px;
