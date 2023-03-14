@@ -125,7 +125,7 @@ ul {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: hsl(0, 0%, 97%);
+  background-color: hsl(0, 0%, 92%);
   padding: 16px 0;
   -moz-column-gap: 3%;
        column-gap: 3%;
@@ -136,9 +136,13 @@ ul {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 24px;
-  background-color: #F7F7F7;
+  padding: 56px 24px;
+  background-color: hsl(0, 0%, 97%);
   text-align: center;
+}
+
+.nav-localisation__city {
+  font-weight: 500;
 }
 
 .nav-description__title {
@@ -185,12 +189,12 @@ ul {
   padding: 16px 24px;
   border-radius: 25px;
   border: transparent;
+  font-size: 16px;
+  font-weight: 500;
 }
 .btn-base--purple {
   background: linear-gradient(200.64deg, hsl(267, 66%, 60%) -5.2%, #FF79DA 110.74%);
   color: hsl(0, 0%, 100%);
-  font-size: 16px;
-  font-weight: 500;
 }
 
 .card-functioning {
@@ -202,8 +206,8 @@ ul {
   justify-content: start;
   align-items: center;
   width: 100%;
-  margin: 24px 0;
-  background: #F7F7F7;
+  margin-bottom: 24px;
+  background: hsl(0, 0%, 97%);
 }
 .card-functioning__order {
   position: relative;
@@ -259,7 +263,7 @@ ul {
   top: 16px;
   font-size: 14px;
   font-weight: 500;
-  padding: 8px;
+  padding: 8px 16px;
   color: hsl(165, 100%, 26%);
   background-color: hsl(165, 56%, 74%);
 }
@@ -268,6 +272,7 @@ ul {
 }
 .card-restaurant__subtitle {
   margin: 8px 0;
+  font-size: 17px;
 }
 .card-restaurant__icone {
   position: absolute;
@@ -281,12 +286,12 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 24px;
+  padding: 48px 24px;
   width: 100%;
 }
 .functioning-section__functioning-title {
   width: 100%;
-  margin: 24px 0;
+  margin-bottom: 24px;
 }
 .functioning-section__functioning-step {
   display: grid;
@@ -302,13 +307,13 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 32px 16px;
+  padding: 56px 16px;
   width: 100%;
-  background-color: #F7F7F7;
+  background-color: hsl(0, 0%, 97%);
 }
 .restaurant-section__restaurant-title {
   width: 100%;
-  margin: 24px 0;
+  margin-bottom: 24px;
 }
 .restaurant-section__restaurant-cards {
   display: grid;
