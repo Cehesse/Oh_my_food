@@ -2,8 +2,12 @@
     @include btn(16px,24px,25px);
     font-size: $font-size-small;
     font-weight: 500;
+    @include shadow-effect-black(200ms,0px,4px,10px,0.25,2);
         &--color-charter{
             background: $gradiant-1;
             color: $color-white;
+        }
+        &:hover{
+            background: $gradiant-1-lighten;
         }
 }

@@ -18,3 +18,12 @@
     border-radius: $border;
     border: transparent;
 }
+
+@mixin shadow-effect-black($duration, $offset-x:10px, $offset-y:10px, $blur-radius:10px,$opacity:0.25, $multiplicateur){
+    box-shadow: $offset-x $offset-y $blur-radius rgba(0, 0, 0, $opacity);
+    transition-duration: $duration;
+        &:hover{
+            box-shadow: $offset-x * $multiplicateur $offset-y * $multiplicateur $blur-radius rgba(0, 0, 0, $opacity * $multiplicateur);
+        }
+        
+}

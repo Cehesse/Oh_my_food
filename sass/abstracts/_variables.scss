@@ -18,6 +18,7 @@ $color-bg-1: hsla(0, 0%, 97%, 1);
 $color-bg-2: hsla(0, 0%, 92%, 1);
 
 $gradiant-1:  linear-gradient(200.64deg, $color-primary -5.2%, $color-tertiary);
+$gradiant-1-lighten:  linear-gradient(200.64deg, lighten($color-primary, 5%) -5.2%, lighten($color-tertiary, 5%));
 
 //Container's maximum width
 $max-width: 1440px;

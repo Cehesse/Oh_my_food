@@ -1,6 +1,8 @@
 .card-functioning{
     @include btn(24px,32px,20px);
     @include flex(row,flex-start,center);
+    @include shadow-effect-black(0ms,0px,4px,10px,0.15,1);
+    //box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     width: 100%;
     margin-bottom: 24px;
     background: $color-bg-1;
@@ -35,6 +37,8 @@
 
 .card-restaurant{
     @include flex(column,flex-start,flex-start);
+    @include shadow-effect-black(0ms,0px,4px,10px,0.1,1);
+    //box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     background-color: $color-white;
     position: relative;
