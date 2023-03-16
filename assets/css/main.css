@@ -156,15 +156,6 @@ p {
   background-color: hsl(0, 0%, 0%);
   padding: 24px;
 }
-.footer-section--text {
-  color: hsl(0, 0%, 100%);
-  font-size: 16px;
-  font-weight: 400;
-  margin-right: 8px;
-}
-.footer-section--text-blod {
-  font-weight: 500;
-}
 .footer-section i {
   width: 16px;
 }
@@ -175,10 +166,19 @@ p {
   font-weight: 400;
 }
 .footer-section__footer-links {
-  padding-top: 16px;
+  padding-top: 24px;
 }
 .footer-section__footer-link {
   padding: 8px 0;
+}
+.footer-section--text {
+  color: hsl(0, 0%, 100%);
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 8px;
+}
+.footer-section--text-blod {
+  font-weight: 500;
 }
 
 .btn-base {
@@ -188,7 +188,7 @@ p {
   font-size: 16px;
   font-weight: 500;
 }
-.btn-base--purple {
+.btn-base--color-charter {
   background: linear-gradient(200.64deg, hsl(267, 66%, 60%) -5.2%, hsl(317, 100%, 74%));
   color: hsl(0, 0%, 100%);
 }
@@ -213,7 +213,7 @@ p {
   font-size: 16px;
   font-weight: 500;
 }
-.card-functioning__order--purple {
+.card-functioning__order--color-charter {
   background-color: hsl(267, 66%, 60%);
   color: hsl(0, 0%, 100%);
 }
@@ -221,7 +221,7 @@ p {
   margin-right: 24px;
   font-size: 16px;
 }
-.card-functioning__icone--purple {
+.card-functioning__icone--color-charter {
   color: hsl(267, 66%, 60%);
 }
 .card-functioning__text {
@@ -229,7 +229,7 @@ p {
   font-size: 16px;
   font-weight: 500;
 }
-.card-functioning--purple {
+.card-functioning--color-charter {
   background-color: hsl(267, 100%, 96%);
 }
 
