@@ -1,8 +1,0 @@
-@function test($test){
-    @if ( unquote("$test:hover") == "true" ) {
-        @return 400;
-    }
-    @else{
-        @return 900;
-    }
-}

@@ -24,8 +24,7 @@
     transition-duration: $duration;
         &:hover{
             box-shadow: $offset-x * $multiplicateur $offset-y * $multiplicateur $blur-radius rgba(0, 0, 0, $opacity * $multiplicateur);
-        }
-        
+        }        
 }
 
 @mixin bg-icone-fa(){
