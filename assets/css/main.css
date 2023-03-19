@@ -318,7 +318,7 @@ p {
   font-size: 21px;
 }
 .card-restaurant .fa-heart {
-  z-index: 0;
+  z-index: 1;
 }
 .card-restaurant .fa-heart:hover::after {
   opacity: 1;
@@ -330,6 +330,12 @@ p {
   content: "\f004";
   font-weight: 400;
   opacity: 1;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
   transition: opacity 800ms ease-in-out;
 }
 .card-restaurant .fa-heart::after {
@@ -340,11 +346,11 @@ p {
           background-clip: text;
   color: transparent;
   position: absolute;
-  opacity: 0;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  opacity: 0;
   z-index: -1;
   transition: opacity 800ms ease-in-out;
 }
