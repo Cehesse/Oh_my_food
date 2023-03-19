@@ -18,7 +18,7 @@
     border-radius: $border;
     border: transparent;
     position: relative;
-    z-index: 1;
+    z-index: 0;
     &::after{
         border-radius: $border;
     }
@@ -57,14 +57,36 @@
 }
 
 @mixin bg-effect-icone(){
-    & .fas{
-    background: $bg-color-effect;
-    background-clip: text;
-    color: transparent;
-    transition: opacity 800ms ease-in-out;
-    opacity: 0;
-    &:hover{
-        opacity: 1;
+    & .fa-heart{
+        z-index: 0;
+        &:hover{
+            &::after{
+                opacity: 1;
+                }      
+            &::before{
+                opacity: 0;
+                }      
+            }
+        &::before{
+            content: "\f004";
+            font-weight: 400;
+            opacity: 1;
+            transition: opacity 800ms ease-in-out;
+        }
+        &::after{
+            content: "\f004";
+            font-weight: 900;
+            background: $bg-color-effect;
+            background-clip: text;
+            color: transparent;
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            transition: opacity 800ms ease-in-out;
         }
     }
 }

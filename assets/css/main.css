@@ -186,7 +186,7 @@ p {
   border-radius: 25px;
   border: transparent;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   transition: all 200ms ease-in-out;
   font-size: 16px;
@@ -223,7 +223,7 @@ p {
   border-radius: 20px;
   border: transparent;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -317,16 +317,36 @@ p {
   bottom: 32px;
   font-size: 21px;
 }
-.card-restaurant .fas {
+.card-restaurant .fa-heart {
+  z-index: 0;
+}
+.card-restaurant .fa-heart:hover::after {
+  opacity: 1;
+}
+.card-restaurant .fa-heart:hover::before {
+  opacity: 0;
+}
+.card-restaurant .fa-heart::before {
+  content: "\f004";
+  font-weight: 400;
+  opacity: 1;
+  transition: opacity 800ms ease-in-out;
+}
+.card-restaurant .fa-heart::after {
+  content: "\f004";
+  font-weight: 900;
   background: linear-gradient(200.64deg, hsl(267, 66%, 60%) -5.2%, hsl(317, 100%, 74%));
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
-  transition: opacity 800ms ease-in-out;
+  position: absolute;
   opacity: 0;
-}
-.card-restaurant .fas:hover {
-  opacity: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: opacity 800ms ease-in-out;
 }
 
 .functioning-section {
