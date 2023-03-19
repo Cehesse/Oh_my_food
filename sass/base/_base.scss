@@ -1,6 +1,6 @@
 .page{
     box-sizing: border-box;
-    max-width: $max-width;
+    min-width: 100%;
     padding: $padding-page-border;
 }
 
@@ -23,3 +23,24 @@ a{
 .push-to-right{
     margin-right: auto;
 }
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: $bg-color-effect;
+    border-radius: 20px;
+    border: 3px solid $color-primary;
+  }
