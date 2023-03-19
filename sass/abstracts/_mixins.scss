@@ -21,10 +21,33 @@
 
 @mixin shadow-effect-black($duration:0.2s, $offset-x:10px, $offset-y:10px, $blur-radius:10px,$opacity:0.25, $multiplicateur){
     box-shadow: $offset-x $offset-y $blur-radius rgba(0, 0, 0, $opacity);
-    transition-duration: $duration;
+    transition: all $duration ease-in-out; 
         &:hover{
             box-shadow: $offset-x * $multiplicateur $offset-y * $multiplicateur $blur-radius rgba(0, 0, 0, $opacity * $multiplicateur);
         }        
+}
+
+@mixin bg-effect-transparency(){
+    &--color-charter{
+        background: $bg-color-effect;  
+        }
+    &__bg{
+        @include btn(16px,24px,25px);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 300ms ease-in-out;
+            &--color-charter{
+                background: $bg-color-effect-lighten;
+                }
+            &:hover{
+                opacity: 1;
+            }
+        }  
 }
 
 @mixin bg-icone-fa(){
@@ -32,21 +55,24 @@
         &:before{
         font-weight: 400;
         color: black;
-        transition: all 400ms cubic-bezier(0,1.45,.79,.91);
+        transition: 1000ms cubic-bezier(.79,.91,0,1.45);
         }
     font-weight: 900;
-    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    background: linear-gradient(200.64deg, $color-primary -5.2%, $color-tertiary 110.74%);
     background-clip: text; 
     color: transparent;
         &:hover{
             font-weight: 900;
-            background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+            background: linear-gradient(200.64deg, $color-primary -5.2%, $color-tertiary 110.74%);
             background-clip: text; 
             color: transparent;
+            //overflow: hidden;
+            //transform: scale(0);
             &:before{
+                //transform: scale(1);
                 font-weight: 900;
                 color: transparent;
-                transition: all 400ms cubic-bezier(0,1.45,.79,.91);}
+                transition: all 1000ms cubic-bezier(0,1.45,.79,.91);}
             }
         }
 }
