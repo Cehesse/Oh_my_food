@@ -51,6 +51,7 @@
         &__text{
             padding: 8px 16px;
             width: 100%;
+            position: relative;
             }
         &__new{
             position: absolute;
@@ -75,5 +76,6 @@
             bottom: 32px;
             font-size: 21px;
         }
-        @include bg-icone-fa();
+        @include bg-effect-icone();
+        
 }  
