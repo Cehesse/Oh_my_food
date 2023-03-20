@@ -1,6 +1,5 @@
 .nav-section{
     @include flex(column,center,center);
-    width: 100%;
         &__nav-localisation {
         @include flex(row,center,center);
         width: 100%;
@@ -8,7 +7,6 @@
         padding: 16px 0;
         column-gap: 3%;
         }
-
         &__nav-description {
         @include flex(column,center,center);
         width: 100%;

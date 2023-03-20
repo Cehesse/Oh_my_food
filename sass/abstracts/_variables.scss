@@ -3,9 +3,10 @@
 //Color
 
 $color-primary: hsla(267, 66%, 60%, 1);
+$color-primary-light: hsla(267, 100%, 96%, 1); 
 $color-secondary:hsla(207, 100%, 20%, 1);
 $color-secondary-light: hsla(207, 92%, 76%, 1);
-$color-tertiary: hsla(317, 100%, 74%, 1);
+$color-tertiary:hsla(317, 100%, 74%, 1);
 $color-secondary-light: hsla(207, 92%, 76%, 1);
 
 $color-green: hsla(165, 100%, 26%, 1);
@@ -17,7 +18,8 @@ $color-black: hsl(0,0%,0%);
 $color-bg-1: hsla(0, 0%, 97%, 1);
 $color-bg-2: hsla(0, 0%, 92%, 1);
 
-$gradiant-1:  linear-gradient(200.64deg, $color-primary -5.2%, $color-tertiary);
+$bg-color-effect:  linear-gradient(200.64deg, $color-primary -5.2%, $color-tertiary);
+$bg-color-effect-lighten:  linear-gradient(200.64deg, lighten($color-primary, 5%) -5.2%, lighten($color-tertiary, 5%));
 
 //Container's maximum width
 $max-width: 1440px;

@@ -1,6 +1,6 @@
 .page{
     box-sizing: border-box;
-    max-width: $max-width;
+    min-width: 100%;
     padding: $padding-page-border;
 }
 
@@ -23,3 +23,24 @@ a{
 .push-to-right{
     margin-right: auto;
 }
+
+//Barre de défilement autre que firefox
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: $color-primary;
+    border-radius: 25px;
+}
+
+*::-webkit-scrollbar-track{
+    background: $color-primary-light;
+}
+
+//Barre de défilement firefox
+* {
+    scrollbar-color: $color-primary $color-primary-light;
+    scrollbar-width: auto;
+  }
