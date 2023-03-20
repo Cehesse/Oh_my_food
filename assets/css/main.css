@@ -421,12 +421,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 48px 24px;
-}
-@media screen and (min-width: 767.98px) {
-  .functioning-section {
-    padding: 48px 5%;
-  }
+  padding: 48px 8%;
 }
 @media screen and (min-width: 1023.98px) {
   .functioning-section {
@@ -461,13 +456,8 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 56px 16px;
+  padding: 56px 8%;
   background-color: hsl(0, 0%, 97%);
-}
-@media screen and (min-width: 767.98px) {
-  .restaurant-section {
-    padding: 48px 5%;
-  }
 }
 @media screen and (min-width: 1023.98px) {
   .restaurant-section {

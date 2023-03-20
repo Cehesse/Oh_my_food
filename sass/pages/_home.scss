@@ -1,9 +1,6 @@
 .functioning-section{
     @include flex(column,center,center);
-    padding: 48px 24px;
-    @media screen and (min-width: map-get($breakpoints, mobile)){
-        padding: 48px 5%;
-        }
+    padding: 48px 8%;
     @media screen and (min-width: map-get($breakpoints, tablette)){
         padding: 48px 13%;
         }
@@ -24,11 +21,8 @@
 
 .restaurant-section{
     @include flex(column,center,center);
-    padding: 56px 16px;
+    padding: 56px 8%;
     background-color: $color-bg-1;
-    @media screen and (min-width: map-get($breakpoints, mobile)){
-        padding: 48px 5%;
-            }
     @media screen and (min-width: map-get($breakpoints, tablette)){
         padding: 48px 13%;
             }
