@@ -142,8 +142,8 @@ p {
   width: 100%;
   background-color: hsl(0, 0%, 92%);
   padding: 16px 0;
-  -moz-column-gap: 3%;
-       column-gap: 3%;
+  -moz-column-gap: 2%;
+       column-gap: 2%;
 }
 .nav-section__nav-description {
   display: flex;
@@ -227,6 +227,72 @@ p {
   font-weight: 500;
 }
 
+.loader {
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  animation: disappear 15s forwards;
+}
+.loader .fa-utensils {
+  position: absolute;
+  font-size: 80px;
+  background: linear-gradient(200.64deg, hsl(267, 66%, 60%) -5.2%, hsl(317, 100%, 74%));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.loader .circle-1 {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  border-top: 5px solid hsl(267, 66%, 60%);
+  animation: spin 2s infinite linear normal;
+}
+.loader .circle-2 {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  border-top: 5px solid hsl(317, 100%, 74%);
+  animation: spin 2s infinite ease-in-out reverse;
+}
+.loader .circle-3 {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  border-top: 5px solid hsl(267, 100%, 96%);
+  animation: spin 2s infinite linear normal;
+}
+
+@keyframes disappear {
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes spin {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
 .btn-base {
   padding: 16px 24px;
   border-radius: 25px;

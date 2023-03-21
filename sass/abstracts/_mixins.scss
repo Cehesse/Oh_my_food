@@ -56,7 +56,7 @@
           
 }
 
-@mixin bg-effect-icone(){
+@mixin bg-effect-icone-heart(){
     & .fa-heart{
         z-index: 1;
         &:hover{
@@ -95,4 +95,14 @@
             transition: opacity 800ms ease-in-out;
         }
     }
+}
+
+@mixin circle($height:200px, $width:200px, $color:$color-primary){
+    content: "";
+    z-index: 2;
+    position: absolute;
+    border-radius: 50%;
+    height: $height;
+    width: $width;
+    border-top: 5px solid $color;
 }

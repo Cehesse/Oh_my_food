@@ -5,7 +5,7 @@
         width: 100%;
         background-color: $color-bg-2;
         padding: 16px 0;
-        column-gap: 3%;
+        column-gap: 2%;
         }
         &__nav-description {
         @include flex(column,center,center);
