@@ -57,6 +57,7 @@
 }
 
 @mixin bg-effect-icone-heart(){
+    *{
     & .fa-heart{
         z-index: 1;
         &:hover{
@@ -94,6 +95,7 @@
             z-index: -1;
             transition: opacity 800ms ease-in-out;
         }
+    }
     }
 }
 
