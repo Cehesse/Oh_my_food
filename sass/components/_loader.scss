@@ -6,8 +6,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: white;
-    animation: disappear 15s forwards;
+    background-color: black;
+    animation: disappear 3s forwards;
         & .fa-utensils{
             position: absolute;
             font-size: 80px;
@@ -41,7 +41,7 @@
         }
     
         100%{
-          rotate: (360deg);
+            rotate: (360deg);
         }
       }
     
