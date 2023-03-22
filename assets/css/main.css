@@ -725,6 +725,15 @@ p {
   row-gap: 16px;
   width: 100%;
 }
+.menu-section__menu-step--1 {
+  animation: 0.5s 0s cubic-bezier(0.78, 0.11, 0.84, 0.77) 1 normal both running step;
+}
+.menu-section__menu-step--2 {
+  animation: 0.5s 0.5s cubic-bezier(0.78, 0.11, 0.84, 0.77) 1 normal both step;
+}
+.menu-section__menu-step--3 {
+  animation: 0.5s 1s cubic-bezier(0.78, 0.11, 0.84, 0.77) 1 normal both step;
+}
 .menu-section__menu-order {
   display: flex;
   flex-direction: row;
@@ -749,4 +758,19 @@ p {
   width: 40px;
   height: 3px;
   background-color: hsl(165, 56%, 74%);
+}
+
+@keyframes step {
+  0% {
+    transform: scale(0);
+    translate: 150%;
+    transform: skewX(45deg);
+    rotate: 45deg;
+  }
+  100% {
+    transform: scale(1);
+    translate: 0%;
+    transform: skewX(0deg);
+    rotate: 0deg;
+  }
 }/*# sourceMappingURL=main.css.map */
