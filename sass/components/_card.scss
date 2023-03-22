@@ -2,7 +2,6 @@
     @include btn(24px,32px,20px);
     @include flex(row,flex-start,center);
     @include shadow-effect-black(0ms,0px,4px,10px,0.15,1);
-    //box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     margin-bottom: 24px;
     @media screen and (min-width: map-get($breakpoints, mobile)){
         margin-bottom: 0;
@@ -44,7 +43,6 @@
 .card-restaurant{
     @include flex(column,flex-start,flex-start);
     @include shadow-effect-black(0ms,0px,4px,10px,0.1,1);
-    //box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     background-color: $color-white;
     position: relative;
@@ -90,10 +88,10 @@
 .card-menu{
     @include flex(row,center,flex-end);
     @include shadow-effect-black(0ms,0px,4px,15px,0.1,1);
-    //box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     background-color: $color-white;
     width: 100%;
+    transition: all 2s ease-in-out;
         &__text{
             padding: 8px 16px;
             overflow: hidden;
@@ -120,15 +118,22 @@
             font-size: 15px;
             }
         &__validate{
+            @include flex(column,center,center);
             margin-right: -72px;
-            width: 72px;
+            opacity: 0;
             padding: 24px;
             border-radius: 0px 15px 15px 0px;
             background:$color-green-light ;
-            @include flex(column,center,center);
-            transition-duration: .5s;
+            transition: all 0.4s cubic-bezier(.24,.82,.79,.91);
+            color: white;
+            }
         &__icone{
             color: white;
         }
-    }
+        &:hover >{
+            &  .card-menu__validate{
+            margin-right: 0px;
+            opacity: 1; 
+            }
+        }
 }
