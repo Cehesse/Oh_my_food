@@ -21,9 +21,6 @@ $color-bg-2: hsla(0, 0%, 92%, 1);
 $bg-color-effect:  linear-gradient(200.64deg, $color-primary -5.2%, $color-tertiary);
 $bg-color-effect-lighten:  linear-gradient(200.64deg, lighten($color-primary, 5%) -5.2%, lighten($color-tertiary, 5%));
 
-//Container's maximum width
-$max-width: 1440px;
-
 //Breakpoints map
 $breakpoints: (
   'mobile': 767.98px,

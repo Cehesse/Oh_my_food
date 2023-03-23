@@ -24,7 +24,9 @@ a{
     margin-right: auto;
 }
 
-//Barre de défilement autre que firefox
+@include bg-effect-icone-heart();
+
+//Barre de défilement autres que firefox
 *::-webkit-scrollbar {
     width: 8px;
     height: 8px;
