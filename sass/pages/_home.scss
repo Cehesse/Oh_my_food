@@ -11,11 +11,11 @@
         &__functioning-step {
             @include grid-repeat(3,1fr,1,1fr,center,center);
             width: 100%;
-                @media screen and (min-width: map-get($breakpoints, mobile)){
-                @include flex(row,center,center);
-                column-gap: 4%;
-                }
-    }
+            @media screen and (min-width: map-get($breakpoints, mobile)){
+            @include flex(row,center,center);
+            column-gap: 4%;
+            }
+        }
 }
 
 .restaurant-section{
@@ -33,15 +33,14 @@
             @include grid-repeat(4,1fr,1,1fr,center,center);
             row-gap: 16px;
             width: 100%;
-                @media screen and (min-width: map-get($breakpoints, mobile)){
-                @include grid-repeat(2,1fr,2,1fr,center,center);
-                column-gap: 5%;
-                }
-                @media screen and (min-width: map-get($breakpoints, tablette)){
-                @include flex(row,flex-start,center);
-                column-gap: 5%;
-                overflow: scroll;
-                }
-    }
-
+            @media screen and (min-width: map-get($breakpoints, mobile)){
+            @include grid-repeat(2,1fr,2,1fr,center,center);
+            column-gap: 5%;
+            }
+            @media screen and (min-width: map-get($breakpoints, tablette)){
+            @include flex(row,flex-start,center);
+            column-gap: 5%;
+            overflow: scroll;
+            }
+        }
 }

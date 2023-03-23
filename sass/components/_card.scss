@@ -3,10 +3,10 @@
     @include flex(row,flex-start,center);
     @include shadow-effect-black(0ms,0px,4px,10px,0.15,1);
     margin-bottom: 24px;
+    background: $color-bg-1;
     @media screen and (min-width: map-get($breakpoints, mobile)){
         margin-bottom: 0;
-        }
-    background: $color-bg-1;
+    }
         &__order{
             position: relative;
             right: 42px;
@@ -33,7 +33,7 @@
                 text-align:center;
                 font-size: 15px;
                 min-width: 30%;
-                }
+            }
             }
         &--color-charter{
             background-color: $color-primary-light;       
@@ -96,7 +96,7 @@
             padding: 8px 16px;
             overflow: hidden;
             width: 80%;
-            }
+        }
         &__title{
             margin-bottom: 8px;
             font-weight: 500;
@@ -104,19 +104,19 @@
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
-            }
+        }
         &__subtitle{
             font-weight: 300;
             font-size: $font-size-small;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
-            }
+        }
         &__price{
             padding: 8px 16px;
             font-weight: $font-weight-blod;
             font-size: 15px;
-            }
+        }
         &__validate{
             @include flex(column,center,center);
             margin-right: -72px;
@@ -126,7 +126,7 @@
             background:$color-green-light ;
             transition: all 0.4s cubic-bezier(.24,.82,.79,.91);
             color: white;
-            }
+        }
         &__icone{
             color: white;
         }

@@ -1,7 +1,7 @@
 .loader{
+    @include flex(row,center,center);
     position: fixed;
     z-index: 2;
-    @include flex(row,center,center);
     top: 0;
     right: 0;
     bottom: 0;
@@ -27,21 +27,21 @@
             @include circle(300px,300px,$color-primary-light);
             animation: spin 2s infinite linear normal;
         }
-    }
+}
 
 @keyframes disappear {
-        100% {
-            visibility: hidden;
-        }
+    100% {
+        visibility: hidden;
     }
+}
 
 @keyframes spin{
-        0%{
-            transform: rotate(0deg);
-        }
+    0%{
+        transform: rotate(0deg);
+    }
     
-        100%{
-            transform: rotate(360deg);
-        }
-      }
+    100%{
+        transform: rotate(360deg);
+    }
+}
     

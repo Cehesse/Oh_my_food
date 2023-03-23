@@ -8,14 +8,15 @@
 
 .menu-section{
     @include flex(column,center,center);
-    padding: 32px 3.5%;
+    padding: 32px 4%;
     background-color:$color-bg-1;
     border-radius: 30px 30px 0 0;
     position: relative;
     margin-top: -55px;
-/*     @media screen and (min-width: map-get($breakpoints, tablette)){
+    @media screen and (min-width: map-get($breakpoints, mobile)){
+        margin: -55px 13% 0 13%;
         padding: 32px 13%;
-        } */
+    }
         &__menu-header {
             @include flex(row,center,center);
             column-gap: 24px;
@@ -40,15 +41,15 @@
             margin-bottom: 40px;
             row-gap: 16px;
             width: 100%;
-            &--1{
-            animation: 0.5s 0s cubic-bezier(.78,.11,.84,.77) 1 normal both running step;
-            }
-            &--2{
-                animation: 0.5s 0.5s cubic-bezier(.78,.11,.84,.77) 1 normal both step;
-            }
-            &--3{
-                animation: 0.5s 1s cubic-bezier(.78,.11,.84,.77) 1 normal both step;
-            }
+                &--1{
+                    animation: 1s 0s cubic-bezier(.96,.03,.65,.57) 1 normal both running step;
+                }
+                &--2{
+                    animation: 1s 0.5s cubic-bezier(.96,.03,.65,.57) 1 normal both step;
+                }
+                &--3{
+                    animation: 1s 1s cubic-bezier(.96,.03,.65,.57) 1 normal both step;
+                }
         } 
         &__menu-order{
             @include flex(row,center,center);
@@ -79,14 +80,10 @@
 @keyframes step {
     0% {
         transform: scale(0);
-        transform: translate(150%);
-        transform: skewX(45deg);
-        transform: rotate(45deg);
+        transform: translateX(200%);
     }
     100% {
         transform: scale(1);
         transform: translate(0%);
-        transform: skewX(0deg);
-        transform: rotate(0deg);
     }
 }

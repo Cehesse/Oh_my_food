@@ -26,8 +26,7 @@ a{
 
 @include bg-effect-icone-heart();
 
-
-//Barre de défilement autre que firefox
+//Barre de défilement autres que firefox
 *::-webkit-scrollbar {
     width: 8px;
     height: 8px;
