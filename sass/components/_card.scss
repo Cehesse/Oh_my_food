@@ -31,8 +31,7 @@
             font-weight: 500;
             @media screen and (min-width: map-get($breakpoints, mobile)){
                 text-align:center;
-                font-size: 15px;
-                min-width: 30%;
+                min-width: 40%;
             }
             }
         &--color-charter{
@@ -106,6 +105,7 @@
             text-overflow: ellipsis;
         }
         &__subtitle{
+            margin-bottom: 4px;
             font-weight: 300;
             font-size: $font-size-small;
             overflow: hidden;
@@ -118,6 +118,7 @@
             font-size: 15px;
         }
         &__validate{
+            visibility: hidden;
             @include flex(column,center,center);
             margin-right: -72px;
             opacity: 0;
@@ -132,6 +133,7 @@
         }
         &:hover >{
             &  .card-menu__validate{
+            visibility: visible;
             margin-right: 0px;
             opacity: 1; 
             }

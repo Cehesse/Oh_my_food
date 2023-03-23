@@ -458,8 +458,7 @@ p {
 @media screen and (min-width: 767.98px) {
   .card-functioning__text {
     text-align: center;
-    font-size: 15px;
-    min-width: 30%;
+    min-width: 40%;
   }
 }
 .card-functioning--color-charter {
@@ -550,6 +549,7 @@ p {
   text-overflow: ellipsis;
 }
 .card-menu__subtitle {
+  margin-bottom: 4px;
   font-weight: 300;
   font-size: 16px;
   overflow: hidden;
@@ -562,6 +562,7 @@ p {
   font-size: 15px;
 }
 .card-menu__validate {
+  visibility: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -578,6 +579,7 @@ p {
   color: white;
 }
 .card-menu:hover > .card-menu__validate {
+  visibility: visible;
   margin-right: 0px;
   opacity: 1;
 }
