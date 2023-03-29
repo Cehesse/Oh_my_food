@@ -42,7 +42,7 @@
             row-gap: 16px;
             width: 100%;
                 &--1{
-                    animation: 1s 0s cubic-bezier(.96,.03,.65,.57) 1 normal both running step;
+                    animation: 1s 0s cubic-bezier(.96,.03,.65,.57) 1 normal both step;
                 }
                 &--2{
                     animation: 1s 0.5s cubic-bezier(.96,.03,.65,.57) 1 normal both step;
