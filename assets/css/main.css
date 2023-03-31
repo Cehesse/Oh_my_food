@@ -769,6 +769,6 @@ p {
   }
   100% {
     transform: scale(1);
-    transform: translate(0%);
+    transform: translateX(0%);
   }
 }/*# sourceMappingURL=main.css.map */
