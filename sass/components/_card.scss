@@ -22,9 +22,6 @@
         &__icone{
             margin-right: 24px;
             font-size: $font-size-small;
-                &--color-charter{
-                color: $color-primary;
-                }
             }
         &__text{
             font-size: $font-size-small;
@@ -34,11 +31,13 @@
                 min-width: 40%;
             }
             }
-        &--color-charter{
-            background-color: $color-primary-light;       
-        } 
+        &:hover {
+            background-color: $color-primary-light;
+            &  .card-functioning__icone--color-charter{
+                color: $color-primary;            
+        }
     } 
-
+}
 .card-restaurant{
     @include flex(column,flex-start,flex-start);
     @include shadow-effect-black(0ms,0px,4px,10px,0.1,1);
