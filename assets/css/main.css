@@ -348,7 +348,7 @@ p {
   border-radius: 25px;
 }
 .btn-base:hover {
-  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4.8px 10px rgba(0, 0, 0, 0.3);
 }
 .btn-base--color-charter {
   background: linear-gradient(200.64deg, hsl(267, 66%, 60%) -5.2%, hsl(317, 100%, 74%));
@@ -385,7 +385,7 @@ p {
   border-radius: 25px;
 }
 .btn-order:hover {
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 4.8px 15px rgba(0, 0, 0, 0.42);
 }
 .btn-order--color-charter {
   background: linear-gradient(200.64deg, hsl(267, 66%, 60%) -5.2%, hsl(317, 100%, 74%));
@@ -448,9 +448,6 @@ p {
   margin-right: 24px;
   font-size: 16px;
 }
-.card-functioning__icone--color-charter {
-  color: hsl(267, 66%, 60%);
-}
 .card-functioning__text {
   font-size: 16px;
   font-weight: 500;
@@ -461,8 +458,11 @@ p {
     min-width: 40%;
   }
 }
-.card-functioning--color-charter {
+.card-functioning:hover {
   background-color: hsl(267, 100%, 96%);
+}
+.card-functioning:hover .card-functioning__icone--color-charter {
+  color: hsl(267, 66%, 60%);
 }
 
 .card-restaurant {
